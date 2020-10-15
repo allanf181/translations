@@ -26,6 +26,7 @@ export default {
     english: 'Inglés',
     polish: 'Polaco',
     spanish: 'Español',
+    swedish: 'Swedish', // TODO
     turkish: 'Turco',
     indonesian: 'Indonesian',
     portuguese: 'Portugués',
@@ -163,6 +164,29 @@ export default {
   /* Pages */
   _pg: {
 
+    /* Welcome page */
+    welcome: {
+      title: 'Welcome', // TODO
+      welcomeToAffinitweet: 'Welcome to Affinitweet&nbsp;&nbsp;🎉', // TODO
+      proudToWelcomeYou: 'Hi {username}, we are delighted to make your acquaintance and happy to welcome you among our more than 5 million users!', // TODO
+      next: 'Next', // TODO
+      littleQuestion: 'Quick question...', // TODO
+      doYouWantToFollowUs: 'We update Affinitweet regularly, do you want to follow us on Twitter to find out when new features will be available?', // TODO
+      iWantToFollowYou: 'I want to follow you 😊', // TODO
+      iDontWantToFollowYou: 'No thanks, I\'m good for now!', // TODO
+      great: 'Great&nbsp;&nbsp;🥰', // TODO
+      doYouWantToEnableNotifications: 'So, while you\'re at it, do you want to be notified of our tweets so you can be the first to test our new features?', // TODO
+      iWantToBeNotified: 'I also want to be notified 😇', // TODO
+      iDontWantToBeNotified: 'No, I just want the tweets!', // TODO
+      noProblem: 'No problem&nbsp;&nbsp;😉', // TODO
+      noProblemDescription: 'After all you\'re right, we hardly know each other! Maybe next time then, we hope you\'ll have fun on Affinitweet 💜', // TODO
+      nice: 'Nice&nbsp;&nbsp;🤗', // TODO
+      niceDescription: 'Hop... hop... and hop!<br />That\'s it, you\'re now following us on Twitter! Thanks a lot and have fun on Affinitweet 💜', // TODO
+      awesome: 'Awesome&nbsp;&nbsp;😍', // TODO
+      awesomeDescription: 'Hop... hop... and hop!<br /><br />That\'s it, you\'re now following us on Twitter and notifications have been enabled! Thanks a lot and have fun on Affinitweet 💜', // TODO
+      letsGo: 'Let\'s go!', // TODO
+    },
+
     /* Home page */
     index: {
       title: 'Home', // TODO
@@ -186,11 +210,11 @@ export default {
       trustpilotH2: 'Nuestros usuarios nos califican con {rate}, ¿serás el próximo en opinar sobre nosotros?',
       trustpilotButton: 'Ver y enviar una reseña',
       statistics: 'Estadísticas',
-      totalUsers: '5 millones',
+      totalUsers: '6 millones',
       totalUsersDescription: 'Los usuarios confían en nosotros y usan nuestros servicios',
-      monthlyUsers: '350 000',
+      monthlyUsers: '400 000',
       monthlyUsersDescription: 'Usuarios únicos que regresan en promedio cada mes',
-      totalFeatures: '9 millones',
+      totalFeatures: '20 millones',
       totalFeaturesDoneDescription: 'Funciones hechas desde nuestra apertura en 2014',
       features: 'Funciones',
       latestNews: 'Últimas noticias',
@@ -257,127 +281,6 @@ export default {
       noFeatureFound: 'Unfortunately no feature matches this search... 😔', // TODO
       resetSearch: 'Reset search', // TODO
       letsGo: 'Let\'s go!', // TODO
-    },
-
-    /* Frequently asked questions page */
-    faq: {
-      title: 'Preguntas frecuentes',
-      description: 'All the answers to your questions about us are here!', // TODO
-      searchTerms: 'Términos de búsqueda...',
-      intro: '¡Bienvenido a nuestra página de preguntas frecuentes! Si no encuentra sus respuestas, contáctenos! Haga clic en la categoría correcta correspondiente a su búsqueda o a sus términos de búsqueda en el campo de entrada a continuación.',
-      global: 'Global',
-      features: 'Funciones',
-      security: 'Seguridad',
-      privacy: 'Privacidad',
-      monetization: 'Monetización',
-      questions: {
-        global: [
-          [
-            '¿Cuál es el propósito de Affinitweet?',
-            'Esta es una pregunta muy frecuente, Affinitweet trae dos cosas: funciones de entretenimiento y estadísticas, separadas en dos categorías distintas. Ciertamente, usted conoce Affinitweet por sus funciones virales y entretenidas compartidas en Twitter, ¡pero ofrecemos otras funciones útiles e interesantes!',
-          ],
-          [
-            '¿Cómo usar nuestros servicios / inicio de sesión?',
-            'Para utilizar nuestros servicios, debe iniciar sesión con su cuenta de Twitter. Para hacerlo, simplemente haga clic en "Iniciar sesión" en la esquina superior derecha, y luego vaya a la página que prefiera.',
-          ],
-          [
-            '¿Cómo accedo a mi perfil o cierro sesión?',
-            'Una vez que haya iniciado sesión con su cuenta de Twitter, puede acceder a su perfil o cerrar la sesión haciendo clic o desplazando su apodo de Twitter en la parte superior derecha.',
-          ],
-          [
-            '¿Pero Affinitweet es francés?',
-            'Absolutamente, Affinitweet fue creado y está alojado en Francia 🇫🇷, ¡no se sorprenda si hablamos mejor francés que inglés o si le respondemos en Twitter más fácilmente en este idioma!',
-          ],
-          [
-            'Affinitweet no está disponible en mi idioma, ¿cómo lo hago?',
-            'Si su idioma no está disponible, verá Affinitweet en inglés de manera predeterminada. Si tiene el coraje y el deseo de ayudarnos a internacionalizar y aparecer como traductor en Affinitweet, puede participar y traducir los textos disponibles aquí.',
-          ],
-          [
-            '¿Por qué me piden acceso de escritura a mi cuenta de Twitter?',
-            'Para facilitar su uso, solicitamos acceso de lectura y escritura a su cuenta de Twitter para que podamos publicar un tuit si nos lo permite. Esto nos ahorra tener que crear dos aplicaciones, y que usted tenga que iniciar sesión dos veces.',
-          ],
-          [
-            '¿Por qué se publicó un tuit sin mi consentimiento?',
-            'Este no es el caso y nunca lo será, siempre obtenemos su consentimiento a través de una acción de su parte antes de hacer cualquier cosa. Si se publicó un tuit en su perfil de Twitter, nos ha autorizado a hacerlo al hacer clic en un botón de aprobación.',
-          ],
-          [
-            'Why ask so much permission to log in?', // TODO
-            'Unfortunately, we do not choose which permissions we wish to request for our application. We would like to offer our users to be able to automatically publish their results with their consent, and for this we are obliged to have the "pack" of other permissions.', // TODO
-          ],
-          [
-            '¿Qué significa "POP" y "NUEVO"?',
-            'Estas etiquetas se adjuntan a las características y son visibles junto a ellas. "POP" significa "popular." Es una característica popular. "NUEVO" significa "nuevo". Es una característica que se agregó hace poco tiempo.',
-          ],
-          [
-            '¿Cómo inicio sesión con otra cuenta?',
-            'Cuando inicia sesión en Affinitweet, se usa la cuenta de Twitter a la que está conectado en el navegador. Si desea utilizar Affinitweet con una cuenta que no sea esta, tiene varias posibilidades: (1) cambiar a navegación privada; (2) desconectarse de Twitter y reconectarse con la nueva cuenta; (3) usar otro navegador que no esté conectado con esa misma cuenta de Twitter.',
-          ],
-        ],
-        features: [
-          [
-            '¿Cómo se determina el Top Friends?',
-            'El Top Friends se determina principalmente a partir de tuits, volvemos a sus últimos 3200 tuits para establecer una clasificación durante un largo período.',
-          ],
-          [
-            '¿Por qué mis Top Friends no se apegan a la realidad?',
-            'Intentamos acercarnos lo más posible a la realidad con la información que recopilamos. Algunas veces, alguien con quien usted no habla pero que ha hablado mucho en el pasado está presente en tus Top Friends si usted no ha estado tuiteando mucho por un tiempo, por ejemplo.',
-          ],
-          [
-            '¿Cómo se determinan los resultados de las otras funciones?',
-            'Los algoritmos utilizados para determinar estos resultados son estrictamente confidenciales, lamentablemente no deseamos comunicarnos sobre ellos.',
-          ],
-          [
-            "¡Obtuve a mi hermana en Valentine's y a mi papá en Secret Crush!",
-            'Las funciones "Divertidas" solo están pensadas para entretener como lo indica el nombre de la categoría. Aunque tratamos de acercarnos lo más posible a la realidad con nuestros parámetros de algoritmo, si nos encontramos con la(s) persona(s) correcta(s), ¡sería solo por casualidad!',
-          ],
-          [
-            '¿Cómo funciona First To Follow?',
-            'First To Follow es una función exclusiva y no está disponible en ningún otro lado. Le permite saber cuándo una persona determinada le ha seguido y viceversa. Funcionalidad Gourmet, solo puede hacer un número limitado por 15 minutos.',
-          ],
-          [
-            '¿Cómo funciona Emoji Mood?',
-            'El Emoji Mood le permite saber qué emojis ha estado tuiteando últimamente, ¡volvemos a sus últimos 3200 tuits y simplemente contamos eso!',
-          ],
-        ],
-        security: [
-          [
-            '¿Es seguro el sitio?',
-            'Sí, Affinitweet solo es accesible en https para asegurar su conexión tanto como sea posible. Puede verificar nuestros certificados de seguridad por una organización reconocida como SSLLabs.',
-          ],
-          [
-            '¿Es confiable el sitio?',
-            'Sí, desde que creamos una página de TrustPilot para colectar la opinión de nuestros usuarios, puede consultarla y agregar una opinión si lo desea.',
-          ],
-          [
-            '¿Hay virus o malware?',
-            'Absolutamente no, estamos haciendo todo lo posible para evitar eso. Affinitweet es 100% seguro, le garantizamos que no conseguirá nada como esto en nuestro sitio.',
-          ],
-          [
-            '¿Dónde están mis datos, y, es seguro?',
-            'Sus datos se almacenan en los servidores que alquilamos en París. Estamos alojados por uno de los líderes y le garantizamos que sus datos están seguros.',
-          ],
-        ],
-        privacy: [
-          [
-            '¿Qué hacen con mis datos?',
-            'Explicamos todo lo que hacemos con los datos que recopilamos y procesamos en nuestra página de Datos y Privacidad. Pero para abreviar, recuperamos y almacenamos el mínimo indispensable. Nunca se los comunicaremos a nadie, nunca.',
-          ],
-          [
-            'Are you selling my data?', // TODO
-            'No, and we never will. Affinitweet is a platform created for the sole purpose of entertainment. We derive our revenue from the ads displayed on the site and nothing else.', // TODO
-          ],
-          [
-            '¿Cómo elimino mi cuenta?',
-            'Una vez que haya iniciado sesión, simplemente vaya a su perfil y desplácese hacia abajo y haga clic en el botón eliminar cuenta. Todos los datos relacionados con su cuenta serán eliminados inmediatamente.',
-          ],
-        ],
-        monetization: [
-          [
-            'Es gratis, ¿entonces yo soy el producto?',
-            'Sí, pero no. Nuestra fuente de ingresos proviene sólo de los anuncios que se muestran en las páginas de funciones. Estos ingresos se utilizan para cubrir los costos de los servidores, el desarrollo y eventualmente pagar algunas cervezas si queda algo.',
-          ],
-        ],
-      },
     },
 
     /* Legal page */
@@ -488,9 +391,9 @@ export default {
     unavailableFeature: 'Unavailable feature.', // TODO
     selfUsername: 'Escriba un nombre de usuario diferente al de usted.',
     badUsername: 'Nombre de usuario incorrecto.',
-    notEnoughData: 'No hay suficientes datos.',
+    notEnoughData: 'No hay suficientes datos.', // TODO
+    errorWhileRendering: 'Error while generating image.', // TODO
     accountProtected: 'No puede utilizar esta función mientras su cuenta esté protegida.',
-    refreshPage: 'Por favor actualice la página.',
     timeout: 'Tiempo de espera excedido.',
     twitterError: 'Twitter devolvió un error:',
     twitterErrors: {
